@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 60%;
+}
+
+body {
+    /*background: linear-gradient(to right, #495057 0%, #495057 50%, #212529 50%, #212529 100%);*/
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.explore_grid_adi {
+    display: grid;
+    width: calc(100% - 20px); /* Adjusting width for margin */
+    max-width: 114rem; /* Max width */
+    grid-gap: 2rem; /* Reduced grid gap */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Adjusted grid template */
+    align-items: start;
+    margin-top: 20px; /* Adjusted margin */
+    margin-bottom: 20px; /* Adjusted margin */
+}
+
+.explore_grid-item_adi {
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.1); /* Reduced box-shadow */
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.explore_grid-item_adi:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5); /* Adjusted box-shadow */
+}
+
+.explore_card-img_adi {
+    display: block;
+    width: 100%;
+    height: 10rem; /* Reduced height */
+    object-fit: cover;
+}
+
+.explore_card-content_adi {
+    padding: 1rem; /* Reduced padding */
+}
+
+.explore_card-header_adi {
+    font-size: 1.6rem; /* Reduced font size */
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 0.5rem; /* Reduced margin */
+}
+
+.explore_card-text_adi {
+    font-size: 1.2rem; /* Reduced font size */
+    letter-spacing: 0.1rem;
+    line-height: 1.3;
+    color: #3d3d3d;
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+.explore_card-btn_adi {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1.2rem; /* Reduced padding */
+    font-size: 1.4rem; /* Reduced font size */
+    text-align: center;
+    color: #3363ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.2rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.explore_card-btn_adi span {
+    margin-left: 0.5rem; /* Adjusted margin */
+    transition: 0.2s;
+}
+
+.explore_card-btn_adi:hover,
+.explore_card-btn_adi:active {
+    background-color: #c2cffc;
+}
+
+.explore_card-btn_adi:hover span,
+.explore_card-btn_adi:active span {
+    margin-left: 1rem; /* Adjusted margin */
+}
+
+@media only screen and (max-width: 60em) {
+    body {
+        padding: 1rem; /* Reduced padding */
+    }
+
+    .explore_grid_adi {
+        grid-gap: 1rem; /* Reduced grid gap */
+    }
+}
+
+.overflow-hidden-div {
+    overflow: hidden; /* Apply overflow: hidden to the specified div */
+}
+
+a{
+    text-decoration: none;
+}
